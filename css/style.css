@@ -1,0 +1,76 @@
+body{
+  font-family: sans-serif;
+  font-weight: 100;
+  background: #665;
+}
+h1{
+  text-align: center;
+  color: #510;
+  text-shadow: 0px 2px 0px #458;
+
+}
+h2{
+  text-align: center;
+  color: #510;
+
+}
+
+.id{
+  font-size: 18px;
+}
+.titulo{
+  font-size: 18px;
+
+
+}
+.artista{
+  font-style: italic;
+  font-size: 13;
+}
+.wrapper{
+  width: 700px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px #686;
+  background: #fff;
+  border-radius: 15px;
+  padding: 10px;
+}
+.contact-item{
+  border-bottom: thin solid #ccc;
+  padding: 10px;
+}
+button{
+  background: #080;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: thin solid #060;
+  "margin: 5px auto;"
+}
+button:hover{
+  background: #0A0;
+}
+
+}
+.textbox{
+  border: 1px solid #DBE1EB;
+  font-size: 18px;
+  font-family: Arial, Verdana;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  background: #FFFFFF;
+  background: linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+  color: #2E3133;
+}
+.textbox:focus{
+  color: #2E3133;
+  border-color: #FBFFAD;

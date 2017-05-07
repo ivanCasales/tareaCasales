@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="app"> <!--iniciamos con la directiva de ng-app de angularjs-->
+  <head>
+    <title>La Tropicosa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <!--<link href="css/normalize.css" rel="stylesheet">-->
+    <script type="text/javascript" src=js/angular-1.6.4/angular.min.js ></script>
+    <script type="text/javascript" src=js/Scope.js></script>
+  </head>
+  <body ng-controller="CassettesController"><!--Creamos modelo controlador y nuestra directiva ng-controler igual de angularjs -->
+      <h1>Lista de Cassetes</h1>
+      <div class="wrapper">
+        <div class="contact-item"  ng-repeat="cassette in cassettes"><!--se agrega directiva ng-repeat para mostrar lista de items  igual de angularjs -->
+        <div> {{cassette.id}} | {{cassette.artista}} | {{cassette.titulo}} | {{cassette.anio}} </div><!--con la directiva agregada del ng-repeat ira duplicando las veces que sean necesarias del dom -->
+        <span>{{cassette.disquera}} | {{cassette.precio}}</span>
+      </div>
+      </div>
+    </br>
+    <!--showform cambiara a formVisibility de verdadero a falso con un click y un boton-->
+    <center><button ng-click="ShowForm()" ng-hide="formVisibility"> Añadir Álbum </button></center>
+    <div ng-show="formVisibility" class="wrapper"><!--V=formVisibility nos ayuda para ocultar formulario dependiento de verdadero o falso -->
+
+    <h2>Añadir un Álbum</h2>
+    id: <input type="text" class="textbox" size="5" ng-model="nuevoAlbum.id"> </input><!--agregamos cajas de texto -->
+    artista: <input type="text" class="textbox" size="15" ng-model="nuevoAlbum.artista"> </input>
+    titulo: <input type="text" class="textbox" size="20" ng-model="nuevoAlbum.titulo"> </input>
+  </br>
+    año: <input type="date"  class="textbox" ng-model="nuevoAlbum.anio"> </input>
+    disquera: <input type="text" class="textbox" size="10" ng-model="nuevoAlbum.disquera"> </input>
+    precio: <input type="text" class="textbox" size="10" ng-model="nuevoAlbum.precio"> </input>
+    <button ng-click="Save()"> Guardar </button>
+    </div>
+    </div>
+
+  </body>
+</html>
